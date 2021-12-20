@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
-const greatings = <h1>Hello world</h1>;
+import FirstApp from "./FirstApp";
+import CounterApp from "./CounterApp";
+import './index.css';
 
 const divRoot = document.querySelector('#root');
 
-ReactDOM.render(greatings, divRoot);
+ReactDOM.render(<CounterApp value = {0} />, divRoot);
